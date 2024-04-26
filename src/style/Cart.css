@@ -1,0 +1,58 @@
+.cart-page{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.b-pet-btn{
+    position: absolute;
+    width: 120px;
+    height: 33px;
+    top: calc((100vh - 33px)*0.5);
+    left: calc((100vw - 120px)*0.5);
+    border: 0;
+    border-radius: 4px;
+    background-color: rgb(0, 157, 255);
+    cursor: pointer;
+}
+.oc-box1{
+    position: fixed;
+    background-color: white;
+    width: 250px;
+    left: calc((100vw - 250px) * 0.5);
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: all 0.25s linear;
+    z-index: 10;
+    top: -150px;
+    border: 1px solid rgb(156, 156, 156);
+}
+#rmcart-success{
+    top: -150px;
+    
+}
+
+.oc-box1::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: -4px; /* Position it at the bottom of the container */
+    left: 0px;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    background-color: green;
+    height: 4px;
+    transition: all 1.55s ease-out;
+}
+.oc-box1.order-success::after {
+    transform-origin: bottom left;
+    transform: scaleX(1); /* Scale the element when order is successfully placed */
+  }
+.check-icon-rmcart{
+    color: red !important;
+    width: 30px !important;
+    height: 30px !important;
+    margin-right: 10px;
+}

@@ -1,0 +1,26 @@
+
+.detail-page{
+    margin-top: 75px;
+}
+.main-d-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    
+}
+.d-img{
+    width: 100%;
+}
+.lft-d-box{
+    width: 275px;
+}
+.rgt-d-box{
+    width: calc(100vw - 290px);
+    margin-left: 10px;
+}
+@media only screen and (max-width:550px){
+
+    .rgt-d-box{
+        width: 100vw;
+    }
+}

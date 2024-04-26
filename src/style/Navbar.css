@@ -1,0 +1,133 @@
+.navbar{
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    height: 68px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    justify-content: center;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 9px;
+    cursor: pointer;
+    left: 10px;
+    
+}
+.navlinks{
+    margin: 0px 10px; 
+    margin-bottom: 0px;
+    
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    height: 30px;
+    margin-top: 5px;
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align: center;
+    
+
+}
+.navlinks::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    background-color: goldenrod;
+    height: 2px;
+    transition: all 0.25s ease-out;
+
+}
+.navlinks:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+.navlinks:hover{
+    border-bottom: 0;
+}
+
+.navbar-input{
+    width: 65vw ;
+    height: 27px ;
+    border-top-left-radius: 5px ;
+    border-bottom-left-radius: 5px ;
+    border: 0px ;
+    padding-left: 5px ;
+    font-size: 15px ;
+    outline: none ;
+    margin: 0px;
+}
+.navbar-button{
+    width: 50px;
+    height: 33px !important;
+    cursor: pointer;
+    border-top-right-radius: 5px ;
+    border-bottom-right-radius: 5px ;
+    background-color: goldenrod;
+}
+.nav-box{
+  width: 120px;
+  background-color: rgba(201, 191, 191, 0.959);
+  position: absolute;
+  top: 68px;
+  right: 0px;
+  transition: all 0.25s linear;
+  border-radius: 3px;
+  
+
+}
+.notlogin,.loggedin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart-nav{
+   margin-right: 30px;
+}
+
+.small-nav-box{
+    display: none;
+}
+.acc-box{
+   position: absolute;
+   top: 18px;
+   right: 25px;
+    text-align: end;
+}
+
+@media only screen and (max-width:600px){
+    .acc-box{
+        right: 5px;
+    }
+    .navbar-input{
+        width: 50vw;
+    }
+}
+@media only screen and (max-width:400px){
+    .logo{
+        width: 40px;
+        height: 40px;
+       top: 14px;
+       left: 5px;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .navbar-input{
+        width: 45vw;
+    }
+    .acc-box{
+        right: 0px;
+    }
+}

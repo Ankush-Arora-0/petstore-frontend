@@ -1,0 +1,9 @@
+.order-page{
+    margin-top: 80px;
+}
+.orders{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

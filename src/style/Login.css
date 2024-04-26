@@ -1,0 +1,44 @@
+.login-container {
+    max-width: 400px;
+    margin: 110px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #password,#username{
+    width: 100%;
+    padding: 8px 0px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding-left: 5px;
+    box-sizing: border-box;
+  }
+  
+  .lgn-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .lgn-btn:hover {
+    background-color: #0056b3;
+  }
+  

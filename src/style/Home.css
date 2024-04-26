@@ -1,0 +1,105 @@
+.home-page{
+    margin-top: 68px;
+}
+.container-images{
+    width: 100vw;
+    height: 350px;
+    position: relative;
+
+}
+.container-images::after{
+    content: '';
+    position: absolute;
+    top:-50px;
+    left: 0px;
+    width: 100vw;
+    height: 500px;
+    background: url('../images/background.jpg') center center/cover no-repeat;
+    z-index: -1;
+}
+.oc-box {
+    position: fixed;
+    background-color: white;
+    width: 250px;
+    left: calc((100vw - 250px) * 0.5);
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: all 0.25s linear;
+    z-index: 10;
+    top: -150px; /* Initially set it off-screen */
+}
+
+.oc-box::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: -4px; /* Position it at the bottom of the container */
+    left: 0px;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    background-color: green;
+    height: 4px;
+    transition: all 1.55s ease-out;
+}
+
+.oc-box.order-success::after {
+    transform-origin: bottom left;
+    transform: scaleX(1); /* Scale the element when order is successfully placed */
+}
+
+
+
+.check-icon-order{
+    color: green !important;
+    width: 30px !important;
+    height: 30px !important;
+    margin-right: 10px;
+}
+.card-box{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient( to bottom ,rgba(189, 177, 177, 0.199) 30%,rgba(221, 207, 207, 0.301) 100%);
+    width: 100vw;
+    height: 100%;
+    justify-content:space-evenly;
+}
+.filter-opt{
+    display: flex;
+    width: 100px;
+    text-align: end;
+}
+.filter-opt label{
+    display: block;
+    width: 70px !important;
+    font-size: 20px !important;
+}
+.filter-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.filter{
+    width: 100vw;
+    height: 130px;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.829);
+    padding-top: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+.filter h2{
+    margin: 5px 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.filter-btn{
+    width: 100px;
+    height: 30px;
+    background-color: goldenrod;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+}

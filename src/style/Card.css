@@ -1,0 +1,103 @@
+.card{
+    width: 280px;
+    height: 430px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 5px rgba(206, 204, 204, 0.699);
+    text-align: center;
+    cursor: pointer;
+}
+.card-image{
+    width: 80% ;
+    height: 250px;
+    transition: all 0.25s linear;
+    
+}
+.card:hover .card-image{
+    transform: scale(0.9) !important;
+}
+.card h4{
+    margin: 5px 0px;
+}
+.price{
+    width: 100%;
+    text-align: start;
+    padding: 1px 15px;
+    box-sizing: border-box;
+}
+.card-btn{
+    width: 90%;
+    margin: 5px auto;
+    height: 30px;
+    color: white;
+    border-radius: 3px;
+    padding: 0px;
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.25s linear;
+}
+.buy-btn{
+    background-color: black;
+   
+}
+.cart-btn{
+    background-color: goldenrod;
+    
+}
+.card-btn:hover{
+    transform: scaleX(0.95);
+}
+.cart-card,.order-card,.order-card1{
+    width: 280px;
+  
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px 30px;
+    padding: 0 5px;
+    padding-bottom: 15px;
+}
+
+.cart-card h4{
+    margin: 5px 0px;
+    text-align: center;
+
+}
+.ab-box{
+    width: 100%;
+
+}
+.age,.breed{
+    width: 100% !important;
+    margin: 2px 0;
+    display: block;
+    text-align: start;
+    padding-left: 15px;
+}
+.rmv-btn{
+    background-color: red;
+}
+.cart-card p{
+    margin: 5px 0px;
+}
+.date,.time{
+    width: 40%;
+    margin:5px;
+    float: left;
+    text-align: left;
+}
+.time{
+    text-align: end;
+    float: right;
+}
+@media only screen  and (max-width:400px) {
+    .cart-card{
+        margin: 10px 0;
+    }
+}
+@media only screen  and (max-width:300px) {
+    .card{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
